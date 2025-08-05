@@ -32,13 +32,13 @@ export default function Booking() {
   return (
     <>
       <Head>
-        <title>Boat Booking Form | UYBC Boat Managament</title>
+        <title>Boat Damage/Repair Report | UYBC Boat Managament</title>
       </Head>
       <main className="main-center-container">
         {!submitted ? (
           <div className="form-box">
             <form onSubmit={handleSubmit}>
-              <h1>Boat Booking Form</h1>
+              <h1>Boat Damage/Repair Report</h1>
               <input
                 type="text"
                 name="name"
@@ -68,7 +68,7 @@ export default function Booking() {
             </form>
           </div>
         ) : (
-          <div className="success-message">Thank you for your boat booking request!</div>
+          <div className="success-message">Thank you for your boat damage/repair report!</div>
         )}
       </main>
     </>

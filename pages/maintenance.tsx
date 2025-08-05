@@ -32,13 +32,13 @@ export default function Maintenance() {
   return (
     <>
       <Head>
-        <title>Maintenance Report Form | UYBC Boat Managament</title>
+        <title>Equipment Request | UYBC Boat Managament</title>
       </Head>
       <main className="main-center-container">
         {!submitted ? (
           <div className="form-box">
             <form onSubmit={handleSubmit}>
-              <h1>Maintenance Report Form</h1>
+              <h1>Equipment Request</h1>
               <input
                 type="text"
                 name="name"
@@ -68,7 +68,7 @@ export default function Maintenance() {
             </form>
           </div>
         ) : (
-          <div className="success-message">Thank you for your maintenance report!</div>
+          <div className="success-message">Thank you for your equipment request!</div>
         )}
       </main>
     </>

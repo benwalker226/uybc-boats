@@ -12,12 +12,12 @@ export default function Home() {
         <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap", justifyContent: "center" }}>
           <Link href="/booking" passHref legacyBehavior>
             <a className="button-primary" style={{ minWidth: 200, textAlign: "center", fontSize: 18 }}>
-              Boat Booking Form
+              Boat Damage/Repair Report
             </a>
           </Link>
           <Link href="/maintenance" passHref legacyBehavior>
             <a className="button-primary" style={{ minWidth: 200, textAlign: "center", fontSize: 18 }}>
-              Maintenance Report Form
+              Equipment Request
             </a>
           </Link>
         </div>
