@@ -1,4 +1,4 @@
 declare module "*.png" {
-  const value: import("next/dist/shared/lib/image-external").StaticImageData;
+  const value: import("next/image").StaticImageData;
   export default value;
 }
