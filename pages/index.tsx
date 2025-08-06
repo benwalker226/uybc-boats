@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -8,6 +9,17 @@ export default function Home() {
         <title>UYBC Boat Managament</title>
       </Head>
       <main className="main-center-container" style={{ minHeight: "70vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+        {/* Logo centered above the title */}
+        <div className="logo-header">
+          <Image
+            src="/logo/logo.png"
+            alt="Logo"
+            width={200}
+            height={200}
+            priority
+            className="site-logo"
+          />
+        </div>
         <h1 style={{ fontSize: "2.4rem", marginBottom: "2rem", textAlign: "center" }}>UYBC Boat Managament</h1>
         <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap", justifyContent: "center" }}>
           <Link href="/booking" passHref legacyBehavior>
