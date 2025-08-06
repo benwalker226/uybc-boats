@@ -16,16 +16,6 @@ const Layout = ({ children }: LayoutProps) => (
       {/* fallback/default */}
       <link rel="icon" href="/logo/logo.png" type="image/png" sizes="64x64 32x32 16x16" />
     </Head>
-    <header className="logo-header">
-      <Image
-        src="/logo/logo.png"
-        alt="Logo"
-        width={200}
-        height={200}
-        priority
-        className="site-logo"
-      />
-    </header>
     {children}
   </div>
 );
