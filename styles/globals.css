@@ -49,6 +49,27 @@ html, body {
   .form-box {
     padding: 1.25rem 0.5rem;
   }
+  /* Ensure form container fits small screens with nice spacing */
+  .form-box {
+    width: 100%;
+    max-width: none;
+    margin: 0 0.5rem;
+  }
+  /* Primary buttons go full width and scale font on mobile */
+  .button-primary {
+    width: 100%;
+    min-width: auto;
+    font-size: 1.05rem;
+  }
+  /* Input/textarea font size for readability on mobile */
+  input[type="text"],
+  textarea {
+    font-size: 0.95rem;
+  }
+  /* Strengthen main-center-container padding for mobile */
+  .main-center-container {
+    padding: 2rem 1rem 3rem;
+  }
 }
 
 input[type="text"],
@@ -89,7 +110,10 @@ label {
   transition: background 0.18s, box-shadow 0.18s, transform 0.16s;
   margin-top: 0.25rem;
   margin-bottom: 1rem;
-  display: inline-block;
+  display: inline-flex; /* so content centers and can wrap */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   box-shadow: 0 0 0 rgba(0,0,0,0); /* transition baseline */
   text-decoration: none; /* Remove underlining */
 }

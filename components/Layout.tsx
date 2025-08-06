@@ -9,6 +9,8 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => (
   <div className="site-layout">
     <Head>
+      {/* Mobile viewport for responsiveness */}
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       {/* Best-practice: multiple icon sizes for different devices */}
       <link rel="icon" href="/logo/logo.png" type="image/png" sizes="64x64" />
       <link rel="icon" href="/logo/logo.png" type="image/png" sizes="32x32" />
