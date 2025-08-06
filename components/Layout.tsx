@@ -9,11 +9,11 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => (
   <div className="site-layout">
     <Head>
-      <link rel="icon" href="/images/logo.png" type="image/png" />
+      <link rel="icon" href="/logo/logo.png" type="image/png" />
     </Head>
     <header className="logo-header">
       <Image
-        src="/images/logo.png"
+        src="/logo/logo.png"
         alt="Logo"
         width={120}
         height={120}

@@ -1,0 +1,1 @@
+Place your logo.png file in this folder. It will be used automatically by the site.
