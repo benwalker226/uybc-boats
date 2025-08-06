@@ -115,12 +115,29 @@ label {
 .logo-header {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  align-items: center;
+  margin: 2rem 0 1.5rem;
 }
+/* Remove/override previous max-width so logo can grow */
 .logo-header img {
-  max-width: 120px;
-  height: auto;
+  max-width: unset;
 }
+
+/* New, more specific styling for enlarged responsive logo */
+.site-logo {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive adjustment for narrow screens */
+@media (max-width: 500px) {
+  .site-logo {
+    max-width: 140px;
+  }
+}
+
 .site-layout {
   display: flex;
   flex-direction: column;
