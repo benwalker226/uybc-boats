@@ -14,8 +14,8 @@ export default function Home() {
           <Image
             src="/logo/logo.png"
             alt="Logo"
-            width={200}
-            height={200}
+            width={260}
+            height={260}
             priority
             className="site-logo"
           />
@@ -23,12 +23,32 @@ export default function Home() {
         <h1 style={{ fontSize: "2.4rem", marginBottom: "2rem", textAlign: "center" }}>UYBC Boat Managament</h1>
         <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap", justifyContent: "center" }}>
           <Link href="/booking" passHref legacyBehavior>
-            <a className="button-primary" style={{ minWidth: 200, textAlign: "center", fontSize: 18 }}>
+            <a
+              className="button-primary"
+              style={{
+                minWidth: 200,
+                textAlign: "center",
+                fontSize: 18,
+                backgroundColor: "#73afe3",
+                color: "#fff",
+                border: "none"
+              }}
+            >
               Boat Damage/Repair Report
             </a>
           </Link>
           <Link href="/maintenance" passHref legacyBehavior>
-            <a className="button-primary" style={{ minWidth: 200, textAlign: "center", fontSize: 18 }}>
+            <a
+              className="button-primary"
+              style={{
+                minWidth: 200,
+                textAlign: "center",
+                fontSize: 18,
+                backgroundColor: "#73afe3",
+                color: "#fff",
+                border: "none"
+              }}
+            >
               Equipment Request
             </a>
           </Link>
