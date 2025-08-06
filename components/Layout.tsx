@@ -1,7 +1,6 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import LogoImg from "../public/logo.png";
 
 interface LayoutProps {
   children: ReactNode;
@@ -10,11 +9,11 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => (
   <div className="site-layout">
     <Head>
-      <link rel="icon" href="/logo.png" type="image/png" />
+      <link rel="icon" href="/images/logo.png" type="image/png" />
     </Head>
     <header className="logo-header">
       <Image
-        src={LogoImg}
+        src="/images/logo.png"
         alt="Logo"
         width={120}
         height={120}
