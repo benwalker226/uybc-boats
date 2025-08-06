@@ -1,3 +1,7 @@
+:root {
+  --brand-blue: #0070f3;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -63,7 +67,7 @@ textarea {
 
 input[type="text"]:focus,
 textarea:focus {
-  border-color: #0070f3;
+  border-color: var(--brand-blue);
   outline: none;
 }
 
@@ -74,7 +78,7 @@ label {
 }
 
 .button-primary {
-  background: #0070f3;
+  background: var(--brand-blue);
   color: #fff;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -82,19 +86,21 @@ label {
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.18s;
+  transition: background 0.18s, box-shadow 0.18s;
   margin-top: 0.25rem;
   margin-bottom: 1rem;
   display: inline-block;
+  box-shadow: 0 0 0 rgba(0,0,0,0); /* transition baseline */
 }
 
 .button-primary:hover,
 .button-primary:focus {
   background: #0059c9;
+  box-shadow: 0 2px 8px 0 rgba(0,112,243,0.10), 0 1.5px 4px 0 rgba(0,0,0,0.03);
 }
 
 .success-message {
-  color: #0070f3;
+  color: var(--brand-blue);
   margin-top: 0.5rem;
   font-weight: 500;
 }
@@ -103,4 +109,20 @@ label {
   color: #d32f2f;
   margin-top: 0.5rem;
   font-weight: 500;
+}
+
+/* Layout styles for logo/header */
+.logo-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.logo-header img {
+  max-width: 120px;
+  height: auto;
+}
+.site-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
