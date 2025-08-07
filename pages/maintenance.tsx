@@ -18,9 +18,10 @@ export default function Maintenance() {
     e.preventDefault();
     setSubmitting(true);
     try {
+      const payload = { ...form, formType: "Equipment Request" };
       const res = await fetch('/api/submit', {
         method: 'POST',
-        body: JSON.stringify(form),
+        body: JSON.stringify(payload),
         headers: { 'Content-Type': 'application/json' },
       });
       if (res.ok) setSubmitted(true);

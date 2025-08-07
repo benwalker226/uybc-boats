@@ -37,6 +37,36 @@ npm run dev
 
 ---
 
+## Google Sheets Integration
+
+This project supports saving form submissions to a Google Sheet using a Google Service Account.
+
+### Setup
+
+1. **Create a Google Service Account**  
+   In the [Google Cloud Console](https://console.cloud.google.com/), create a Service Account and generate a key in JSON format.
+
+2. **Share your Google Sheet**  
+   Create a Google Sheet and share it with your Service Account email (can edit).
+
+3. **Configure Environment Variables**  
+   Copy `.env.example` to `.env.local` and fill in the following values:
+
+   - `GOOGLE_SERVICE_ACCOUNT_EMAIL` – from your service account JSON
+   - `GOOGLE_PRIVATE_KEY` – from your service account JSON (use double quotes and preserve `\n` newlines)
+   - `GOOGLE_SHEETS_ID` – found in the Google Sheet URL (between `/d/` and `/edit`)
+   - `GOOGLE_SHEETS_TAB` – (optional) tab name, defaults to `Sheet1`
+
+4. **Deploy**  
+   On Vercel or locally, ensure the above environment variables are set.
+
+### Troubleshooting
+
+- If you see errors about authentication or permissions, double-check the service account, private key, and that the Sheet is shared to the service account email.
+- For local dev, restart the server after editing `.env.local`.
+
+---
+
 ## License
 
 MIT
