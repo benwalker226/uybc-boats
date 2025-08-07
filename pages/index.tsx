@@ -20,7 +20,7 @@ export default function Home() {
             className="site-logo"
           />
         </div>
-        <h1 style={{ fontSize: "2.4rem", marginBottom: "2rem", textAlign: "center" }}>UYBC Boat Managament</h1>
+        <h1 style={{ fontSize: "2.4rem", marginBottom: "2rem", textAlign: "center" }}>UYBC Boat Management</h1>
         <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap", justifyContent: "center" }}>
           <Link href="/booking" passHref legacyBehavior>
             <a

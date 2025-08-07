@@ -32,7 +32,7 @@ export default function Booking() {
   return (
     <>
       <Head>
-        <title>Boat Damage/Repair Report | UYBC Boat Managament</title>
+        <title>Boat Damage/Repair Report | UYBC Boat Management</title>
       </Head>
       <main className="main-center-container">
         {!submitted ? (
