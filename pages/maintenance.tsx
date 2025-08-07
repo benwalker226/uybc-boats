@@ -32,7 +32,7 @@ export default function Maintenance() {
   return (
     <>
       <Head>
-        <title>Equipment Request | UYBC Boat Managament</title>
+        <title>Equipment Request | UYBC Boat Management</title>
       </Head>
       <main className="main-center-container">
         {!submitted ? (
