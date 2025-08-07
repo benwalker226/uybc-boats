@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>UYBC Boat Managament</title>
+        <title>UYBC Boat Management</title>
       </Head>
       <main className="main-center-container" style={{ minHeight: "70vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
         {/* Logo centered above the title */}
