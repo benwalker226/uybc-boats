@@ -19,6 +19,9 @@ const Layout = ({ children }: LayoutProps) => (
       <link rel="icon" href="/logo/logo.png" type="image/png" sizes="64x64 32x32 16x16" />
     </Head>
     {children}
+    <footer style={{ textAlign: "center", marginTop: "2rem", padding: "1rem 0", color: "#888", fontSize: "0.95rem" }}>
+      &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+    </footer>
   </div>
 );
 
