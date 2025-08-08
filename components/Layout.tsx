@@ -20,7 +20,7 @@ const Layout = ({ children }: LayoutProps) => (
     </Head>
     {children}
     <footer style={{ textAlign: "center", marginTop: "2rem", padding: "1rem 0", color: "#888", fontSize: "0.95rem" }}>
-      &copy; {new Date().getFullYear()} Ben Walker.
+      &copy; {new Date().getFullYear()} Ben Walker
     </footer>
   </div>
 );
