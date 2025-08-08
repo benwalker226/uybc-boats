@@ -35,6 +35,14 @@ npm run dev
 - POSTs to `/api/submit` (no database)
 - Blue button, white background, accessible, mobile-friendly
 
+## Tech Stack
+
+- React
+- Next.js v14
+- TypeScript
+- ESLint
+- Vercel
+
 ---
 
 ## License
