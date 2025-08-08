@@ -22,36 +22,38 @@ export default function Home() {
         </div>
         <h1 style={{ fontSize: "2.4rem", marginBottom: "2rem", textAlign: "center" }}>UYBC Boat Management</h1>
         <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap", justifyContent: "center" }}>
-          <Link href="/booking" passHref legacyBehavior>
-            <a
-              className="button-primary"
-              style={{
-                minWidth: 200,
-                textAlign: "center",
-                fontSize: 18,
-                backgroundColor: "#73afe3",
-                color: "#fff",
-                border: "none"
-              }}
-            >
-              Boat Repair Form
-            </a>
-          </Link>
-          <Link href="/maintenance" passHref legacyBehavior>
-            <a
-              className="button-primary"
-              style={{
-                minWidth: 200,
-                textAlign: "center",
-                fontSize: 18,
-                backgroundColor: "#73afe3",
-                color: "#fff",
-                border: "none"
-              }}
-            >
-              Equipment Repair Form
-            </a>
-          </Link>
+          <a
+            href="https://forms.gle/4ZenNQpw44w81ox36"
+            className="button-primary"
+            style={{
+              minWidth: 200,
+              textAlign: "center",
+              fontSize: 18,
+              backgroundColor: "#73afe3",
+              color: "#fff",
+              border: "none"
+            }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Boat Repair Form
+          </a>
+          <a
+            href="https://forms.gle/oxHS2SwCn8YXJ9L9A"
+            className="button-primary"
+            style={{
+              minWidth: 200,
+              textAlign: "center",
+              fontSize: 18,
+              backgroundColor: "#73afe3",
+              color: "#fff",
+              border: "none"
+            }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Equipment Repair Form
+          </a>
         </div>
       </main>
     </>
