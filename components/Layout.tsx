@@ -21,15 +21,6 @@ const Layout = ({ children }: LayoutProps) => (
     {children}
     <footer style={{ textAlign: "center", marginTop: "2rem", padding: "1rem 0", color: "#888", fontSize: "0.95rem" }}>
       &copy; {new Date().getFullYear()} Ben Walker. All rights reserved.
-      <span style={{ margin: "0 0.5em" }}>•</span>
-      <a
-        href="/LICENSE"
-        style={{ color: "#888", textDecoration: "underline", transition: "color 0.2s" }}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        MIT License
-      </a>
     </footer>
   </div>
 );
