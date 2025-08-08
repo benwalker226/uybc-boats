@@ -34,7 +34,7 @@ export default function Home() {
                 border: "none"
               }}
             >
-              Boat Damage/Repair Report
+              Boat Repair Form
             </a>
           </Link>
           <Link href="/maintenance" passHref legacyBehavior>
@@ -49,7 +49,7 @@ export default function Home() {
                 border: "none"
               }}
             >
-              Equipment Request
+              Equipment Repair Form
             </a>
           </Link>
         </div>
