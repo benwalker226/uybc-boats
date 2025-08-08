@@ -23,7 +23,7 @@ export default function Home() {
         <h1 style={{ fontSize: "2.4rem", marginBottom: "2rem", textAlign: "center" }}>UYBC Boat Management</h1>
         <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap", justifyContent: "center" }}>
           <a
-            href="https://forms.gle/4ZenNQpw44w81ox36"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc2jc31Qzd3DL5zLmYHnT7td6JchvFHFurqVWzwqgt4XQQ9OA/viewform?usp=dialog"
             className="button-primary"
             style={{
               minWidth: 200,
@@ -39,7 +39,7 @@ export default function Home() {
             Boat Repair Form
           </a>
           <a
-            href="https://forms.gle/oxHS2SwCn8YXJ9L9A"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfv9o3g3zsjfV4C6dVc26KBMdSDEbuYQLDDDxj5MeXDCgmJfg/viewform?usp=dialog"
             className="button-primary"
             style={{
               minWidth: 200,
