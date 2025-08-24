@@ -34,6 +34,9 @@ html, body {
     min-height: 0;
     padding-top: 2.5rem;
   }
+  .button-group {
+    gap: 0.75rem;
+  }
 }
 
 .form-box {
@@ -45,43 +48,23 @@ html, body {
   width: 100%;
 }
 
+/* Mobile-specific styles */
 @media (max-width: 500px) {
   .form-box {
     padding: 1.25rem 0.5rem;
-  }
-  /* Ensure form container fits small screens with nice spacing */
-  .form-box {
     width: 100%;
     max-width: none;
     margin: 0 0.5rem;
   }
-  /* Primary buttons go full width and scale font on mobile */
-.button-primary {
-
-}
-
-/* Button group spacing for index page */
-.button-group {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-@media (max-width: 600px) {
-  .button-group {
-    gap: 0.75rem;
-  }
-}
+  .button-primary {
     width: 100%;
     min-width: auto;
     font-size: 1.05rem;
   }
-  /* Input/textarea font size for readability on mobile */
   input[type="text"],
   textarea {
     font-size: 0.95rem;
   }
-  /* Strengthen main-center-container padding for mobile */
   .main-center-container {
     padding: 2rem 1rem 3rem;
   }
@@ -140,6 +123,14 @@ label {
   text-decoration: none; /* Ensure no underline on hover/focus */
   transform: translateY(-2px) scale(1.035);
   filter: brightness(1.07);
+}
+
+/* Button group spacing for index page */
+.button-group {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .success-message {
