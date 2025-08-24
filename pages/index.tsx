@@ -14,10 +14,12 @@ export default function Home() {
           <Image
             src="/logo/logo.png"
             alt="Logo"
-            width={260}
-            height={260}
+            width={360}
+            height={360}
             priority
             className="site-logo"
+            style={{ width: '100%', height: 'auto' }}
+            sizes="(max-width: 500px) 140px, (max-width: 1200px) 18vw, 360px"
           />
         </div>
         <h1 style={{ fontSize: "2.4rem", marginBottom: "2rem", textAlign: "center" }}>UYBC Boat Management</h1>
