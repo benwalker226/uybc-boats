@@ -23,7 +23,7 @@ export default function Home() {
           />
         </div>
         <h1 style={{ fontSize: "2.4rem", marginBottom: "2rem", textAlign: "center" }}>UYBC Boat Management</h1>
-        <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap", justifyContent: "center" }}>
+        <div className="button-group">
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSc2jc31Qzd3DL5zLmYHnT7td6JchvFHFurqVWzwqgt4XQQ9OA/viewform?usp=dialog"
             className="button-primary"
