@@ -153,8 +153,8 @@ label {
 
 /* New, more specific styling for enlarged responsive logo */
 .site-logo {
-  /* Responsive scaling: min 240px, prefers 28vw, max 480px */
-  max-width: clamp(240px, 28vw, 480px);
+  /* Responsive scaling: min 140px, prefers 40vw, max 360px */
+  max-width: clamp(140px, 40vw, 360px);
   width: 100%;
   height: auto;
   display: block;
@@ -163,7 +163,8 @@ label {
 /* Responsive adjustment for narrow screens */
 @media (max-width: 500px) {
   .site-logo {
-    max-width: 200px;
+    max-width: 80vw;
+    min-width: 140px;
   }
 }
 
