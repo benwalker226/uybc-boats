@@ -56,7 +56,22 @@ html, body {
     margin: 0 0.5rem;
   }
   /* Primary buttons go full width and scale font on mobile */
-  .button-primary {
+.button-primary {
+
+}
+
+/* Button group spacing for index page */
+.button-group {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .button-group {
+    gap: 0.75rem;
+  }
+}
     width: 100%;
     min-width: auto;
     font-size: 1.05rem;
